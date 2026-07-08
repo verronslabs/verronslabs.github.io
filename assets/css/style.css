@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Verrons Labs: Products & Consulting for Technical Writers and Content Creators">
+  <meta name="theme-color" content="#7C3AED">
+  
+  <title> | Verrons Labs</title>
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/css/style.css">
+  
+  <!-- Preconnect to optimize font loading -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  
+  <!-- SEO -->
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Verrons Labs | Verrons Labs: Products &amp; Consulting for Technical Writers and Content Creators</title>
+<meta name="generator" content="Jekyll v4.3.4" />
+<meta property="og:title" content="Verrons Labs" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Verrons Labs: Products &amp; Consulting for Technical Writers and Content Creators" />
+<meta property="og:description" content="Verrons Labs: Products &amp; Consulting for Technical Writers and Content Creators" />
+<link rel="canonical" href="https://verrons.com/assets/css/style.css" />
+<meta property="og:url" content="https://verrons.com/assets/css/style.css" />
+<meta property="og:site_name" content="Verrons Labs" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Verrons Labs" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"Verrons Labs: Products &amp; Consulting for Technical Writers and Content Creators","headline":"Verrons Labs","url":"https://verrons.com/assets/css/style.css"}</script>
+<!-- End Jekyll SEO tag -->
+
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75' font-weight='bold' fill='%237C3AED'>V</text></svg>">
+  
+  <!-- Apple touch icon -->
+  <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+</head>
+<body>
+  <!-- Skip to main content link for accessibility -->
+  <a href="#main" class="skip-link">Skip to main content</a>
+  
+  <!-- Header and Navigation -->
+  <header>
+    <div class="container">
+      <nav>
+        <a href="/" class="logo">Verrons Labs</a>
+        <ul class="nav-links">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/products/">Products</a></li>
+          <li><a href="/privacy/">Privacy</a></li>
+          <li><a href="/contact/">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main content -->
+  <main id="main">
+    <div class="container">
+      <article class="page">
+  
+  
+  /* Verrons Labs Main Stylesheet */
+/* Responsive, accessible design with purple/blue/white palette */
+
+/* Color Palette (from specification) */
+:root {
+  --color-purple: #7C3AED;
+  --color-purple-light: #C4B5FD;
+  --color-blue: #3B82F6;
+  --color-white: #FFFFFF;
+  --color-text: #1F2937;
+  --color-text-light: #6B7280;
+  --color-bg: #F9FAFB;
+  --color-border: #E5E7EB;
+  --color-success: #10B981;
+  --color-error: #EF4444;
+
+  /* Typography */
+  --font-family-base: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+  --font-family-mono: 'Monaco', 'Courier New', monospace;
+  --font-size-base: 16px;
+  --font-size-small: 14px;
+  --font-size-large: 18px;
+  --line-height-base: 1.6;
+
+  /* Spacing (8px base unit) */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-2xl: 48px;
+
+  /* Breakpoints */
+  --breakpoint-mobile: 320px;
+  --breakpoint-tablet: 768px;
+  --breakpoint-desktop: 1024px;
+  --breakpoint-wide: 1280px;
+
+  /* Sizing for hero avatar (from specification) */
+  --avatar-size-mobile: 240px;
+  --avatar-size-tablet: 400px;
+  --avatar-size-desktop: 500px;
+
+  /* Border radius */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+/* Reset and normalize */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: var(--font-size-base);
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-family-base);
+  color: var(--color-text);
+  background-color: var(--color-white);
+  line-height: var(--line-height-base);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: var(--space-md);
+}
+
+h1 {
+  font-size: 2.5rem;  /* 40px */
+  color: var(--color-purple);
+}
+
+h2 {
+  font-size: 2rem;  /* 32px */
+  color: var(--color-purple);
+}
+
+h3 {
+  font-size: 1.5rem;  /* 24px */
+  color: var(--color-text);
+}
+
+p {
+  margin-bottom: var(--space-md);
+  color: var(--color-text);
+}
+
+a {
+  color: var(--color-blue);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--color-purple);
+  text-decoration: underline;
+}
+
+/* Container for responsive layout */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--space-md);
+}
+
+/* Header and Navigation */
+header {
+  background-color: var(--color-white);
+  border-bottom: 1px solid var(--color-border);
+  padding: var(--space-lg) 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: var(--shadow-sm);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-lg);
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-purple);
+}
+
+.nav-links {
+  display: flex;
+  gap: var(--space-lg);
+  list-style: none;
+}
+
+.nav-links a {
+  color: var(--color-text);
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: var(--color-purple);
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, var(--color-white) 0%, var(--color-bg) 100%);
+  padding: var(--space-2xl) 0;
+  text-align: center;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-xl);
+}
+
+.hero-text {
+  max-width: 800px;
+}
+
+.hero-text h1 {
+  margin-bottom: var(--space-lg);
+}
+
+.hero-text p {
+  font-size: 1.25rem;
+  color: var(--color-text-light);
+}
+
+.hero-avatar {
+  width: var(--avatar-size-mobile);
+  height: var(--avatar-size-mobile);
+  aspect-ratio: 1 / 1;
+  border-radius: var(--radius-lg);
+  background-color: var(--color-purple-light);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.hero-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  alt: "Company avatar";
+}
+
+/* Main content */
+main {
+  padding: var(--space-2xl) 0;
+  min-height: calc(100vh - 200px);
+}
+
+section {
+  margin-bottom: var(--space-2xl);
+}
+
+/* Footer */
+footer {
+  background-color: var(--color-purple);
+  color: var(--color-white);
+  padding: var(--space-2xl) 0;
+  text-align: center;
+  margin-top: var(--space-2xl);
+}
+
+footer a {
+  color: var(--color-purple-light);
+}
+
+footer a:hover {
+  color: var(--color-white);
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: var(--space-md) var(--space-lg);
+  background-color: var(--color-purple);
+  color: var(--color-white);
+  border: none;
+  border-radius: var(--radius-md);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: var(--color-blue);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.btn-secondary {
+  background-color: var(--color-blue);
+  color: var(--color-white);
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-purple);
+}
+
+/* Forms */
+input, textarea, select {
+  font-family: var(--font-family-base);
+  font-size: 1rem;
+  padding: var(--space-md);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background-color: var(--color-white);
+  color: var(--color-text);
+  transition: border-color 0.2s ease;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color: var(--color-blue);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+/* Accessibility */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* Skip link */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--color-blue);
+  color: white;
+  padding: 8px;
+  text-decoration: none;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* RESPONSIVE DESIGN */
+
+/* Tablet (768px and up) */
+@media (min-width: 768px) {
+  :root {
+    --font-size-base: 17px;
+  }
+
+  h1 {
+    font-size: 3rem;  /* 48px */
+  }
+
+  h2 {
+    font-size: 2.25rem;  /* 36px */
+  }
+
+  .nav-links {
+    gap: var(--space-2xl);
+  }
+
+  .hero-avatar {
+    width: var(--avatar-size-tablet);
+    height: var(--avatar-size-tablet);
+  }
+
+  .hero-content {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-text {
+    text-align: left;
+  }
+}
+
+/* Desktop (1024px and up) */
+@media (min-width: 1024px) {
+  :root {
+    --font-size-base: 18px;
+  }
+
+  h1 {
+    font-size: 3.5rem;  /* 56px */
+  }
+
+  h2 {
+    font-size: 2.5rem;  /* 40px */
+  }
+
+  .hero-avatar {
+    width: var(--avatar-size-desktop);
+    height: var(--avatar-size-desktop);
+  }
+
+  .container {
+    padding: 0 var(--space-lg);
+  }
+}
+
+/* Founder profiles */
+.founders {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-xl);
+  margin: var(--space-xl) 0;
+}
+
+.founder {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.founder-image {
+  display: flex;
+  justify-content: center;
+}
+
+.founder-image img {
+  width: 100%;
+  max-width: 280px;
+  height: 400px;
+  object-fit: contain;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(124, 58, 237, 0.15);
+}
+
+.founder-content p {
+  margin: var(--space-md) 0;
+  line-height: 1.7;
+}
+
+.founder-content h3 {
+  font-size: 1.5rem;
+  margin: 0 0 var(--space-sm) 0;
+  color: var(--color-text);
+}
+
+.founder-content strong {
+  color: var(--color-purple);
+}
+
+.founder-content a {
+  color: var(--color-blue);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.founder-content a:hover {
+  text-decoration: underline;
+}
+
+.divider {
+  height: 2px;
+  background: var(--color-purple);
+  margin: var(--space-xl) 0;
+  opacity: 0.1;
+}
+
+/* Mobile optimizations */
+@media (max-width: 767px) {
+  .hero-content {
+    flex-direction: column-reverse;  /* Avatar above text on mobile */
+  }
+
+  .nav-links {
+    gap: var(--space-md);
+    font-size: 0.9rem;
+  }
+
+  h1 {
+    font-size: 1.75rem;  /* 28px */
+  }
+
+  h2 {
+    font-size: 1.5rem;  /* 24px */
+  }
+
+  .container {
+    padding: 0 var(--space-md);
+  }
+
+  .founders {
+    grid-template-columns: 1fr;
+  }
+
+  .founder-image img {
+    max-width: 200px;
+    height: auto;
+  }
+}
+
+/* Tablet and desktop - side-by-side layout */
+@media (min-width: 768px) {
+  .founder-profile {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-xl);
+    align-items: start;
+    margin: var(--space-xl) 0;
+  }
+
+  .founder-profile--alternate {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .founder-profile--alternate .founder-image {
+    order: 2;
+  }
+
+  .founder-profile--alternate .founder-content {
+    order: 1;
+  }
+
+  .founder-image {
+    max-width: 100%;
+  }
+
+  .founder-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(124, 58, 237, 0.15);
+  }
+
+  .founder-content {
+    text-align: left;
+  }
+
+  .founder-content h3 {
+    font-size: 1.75rem;
+    margin: 0 0 var(--space-sm) 0;
+  }
+}
+
+/* Services grid and cards */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: var(--space-xl);
+  margin: var(--space-xl) 0;
+}
+
+.service-card {
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.service-card h3 {
+  color: var(--color-purple);
+  margin-bottom: 0;
+}
+
+.badge {
+  display: inline-block;
+  font-size: var(--font-size-small);
+  font-weight: 600;
+  color: var(--color-purple);
+  background: var(--color-purple-light);
+  padding: 2px 10px;
+  border-radius: var(--radius-full);
+  align-self: flex-start;
+}
+
+/* Product hero (products page) */
+.product-hero {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+  margin: var(--space-xl) 0;
+  align-items: center;
+}
+
+.product-hero-image {
+  flex-shrink: 0;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-bg);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+}
+
+.product-hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: var(--space-md);
+}
+
+.product-hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+@media (min-width: 768px) {
+  .product-hero {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .product-hero-image {
+    width: 240px;
+    height: 240px;
+  }
+}
+
+/* Print styles */
+@media print {
+  body {
+    background: white;
+    color: black;
+  }
+
+  a {
+    color: black;
+  }
+
+  header, footer, .nav-links {
+    display: none;
+  }
+}
+
+/* Dark mode support (future enhancement) */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-text: #F3F4F6;
+    --color-text-light: #D1D5DB;
+    --color-bg: #1F2937;
+    --color-white: #111827;
+    --color-border: #374151;
+  }
+
+  a {
+    color: var(--color-purple-light);
+  }
+}
+
+/* Reduced motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+</article>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Verrons Labs. All rights reserved.</p>
+      <p>
+        <a href="/privacy/">Privacy Policy</a> | 
+        <a href="mailto:contact@verrons.com">Contact</a>
+      </p>
+      <p>
+        <small>Built with <a href="https://jekyllrb.com/" target="_blank">Jekyll</a></small>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Analytics and scripts (future) -->
+  <!-- No tracking or analytics in MVP to comply with privacy requirements -->
+</body>
+</html>

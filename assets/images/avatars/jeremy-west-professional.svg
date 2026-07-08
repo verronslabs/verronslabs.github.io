@@ -1,0 +1,73 @@
+<svg viewBox="0 0 300 450" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .fill-purple { fill: #7C3AED; }
+      .fill-gray { fill: #9CA3AF; }
+      .fill-white { fill: #FFFFFF; }
+      .fill-skin { fill: #F4D5C0; }
+      .fill-hair { fill: #1F2937; }
+      .stroke-dark { stroke: #1F2937; stroke-width: 2; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="300" height="450" fill="#FAFAFA"/>
+  
+  <!-- Shoes -->
+  <ellipse cx="95" cy="410" rx="20" ry="10" class="fill-white stroke-dark"/>
+  <ellipse cx="205" cy="410" rx="20" ry="10" class="fill-white stroke-dark"/>
+  <path d="M 90 415 L 100 415 L 102 430" class="fill-white stroke-dark"/>
+  <path d="M 200 415 L 210 415 L 212 430" class="fill-white stroke-dark"/>
+  
+  <!-- Pant legs -->
+  <path d="M 120 260 L 110 410 Q 105 415 95 410" class="fill-gray stroke-dark"/>
+  <path d="M 180 260 L 190 410 Q 195 415 205 410" class="fill-gray stroke-dark"/>
+  
+  <!-- Pant details/creases -->
+  <line x1="115" y1="320" x2="112" y2="410" stroke="#7C3AED" stroke-width="1" opacity="0.3"/>
+  <line x1="185" y1="320" x2="188" y2="410" stroke="#7C3AED" stroke-width="1" opacity="0.3"/>
+  
+  <!-- Shirt -->
+  <path d="M 110 180 L 190 180 L 195 260 L 105 260 Z" class="fill-purple stroke-dark"/>
+  
+  <!-- Shirt details -->
+  <line x1="150" y1="180" x2="150" y2="260" stroke="#FFFFFF" stroke-width="1" opacity="0.2"/>
+  
+  <!-- Arms -->
+  <line x1="110" y1="190" x2="80" y2="240" class="stroke-dark" stroke-linecap="round" stroke-width="16"/>
+  <line x1="190" y1="190" x2="220" y2="240" class="stroke-dark" stroke-linecap="round" stroke-width="16"/>
+  
+  <!-- Hands -->
+  <circle cx="80" cy="240" r="12" class="fill-skin stroke-dark"/>
+  <circle cx="220" cy="240" r="12" class="fill-skin stroke-dark"/>
+  
+  <!-- Fingers indication -->
+  <line x1="75" y1="250" x2="72" y2="258" class="stroke-dark" stroke-linecap="round" stroke-width="1.5"/>
+  <line x1="85" y1="252" x2="88" y2="260" class="stroke-dark" stroke-linecap="round" stroke-width="1.5"/>
+  
+  <!-- Neck -->
+  <rect x="140" y="150" width="20" height="30" class="fill-skin stroke-dark"/>
+  
+  <!-- Head -->
+  <circle cx="150" cy="110" r="35" class="fill-skin stroke-dark"/>
+  
+  <!-- Hair -->
+  <path d="M 115 95 Q 115 65 150 65 Q 185 65 185 95 L 185 110 Q 150 125 115 110 Z" class="fill-hair"/>
+  <path d="M 120 75 Q 120 68 150 68 Q 180 68 180 75" class="fill-hair"/>
+  
+  <!-- Eyes -->
+  <circle cx="135" cy="105" r="4" class="fill-white stroke-dark"/>
+  <circle cx="165" cy="105" r="4" class="fill-white stroke-dark"/>
+  <circle cx="136" cy="106" r="2.5" class="fill-hair"/>
+  <circle cx="166" cy="106" r="2.5" class="fill-hair"/>
+  
+  <!-- Eyebrows -->
+  <path d="M 130 98 Q 135 96 140 98" stroke="#1F2937" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <path d="M 160 98 Q 165 96 170 98" stroke="#1F2937" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  
+  <!-- Smile/friendly expression -->
+  <path d="M 140 115 Q 150 122 160 115" stroke="#1F2937" stroke-width="2" fill="none" stroke-linecap="round"/>
+  
+  <!-- Nose -->
+  <line x1="150" y1="105" x2="150" y2="113" stroke="#1F2937" stroke-width="1.5"/>
+</svg>
